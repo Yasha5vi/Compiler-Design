@@ -1,3 +1,4 @@
+// ques : count newlines spaces tabs characters
 %{
 int a = 0;
 int b = 0;
