@@ -1,3 +1,4 @@
+// ques : count the number of characters
 %{
     int count=0;
 %}
