@@ -3,9 +3,11 @@
 %}
 
 %%
-[a-zA-Z]+   {printf("Input name is  : %s \n",yytext);}
-
+   {
+        printf("Input name is  : %s \n",yytext);
+   }
 %%
+
 int yywrap(){
     return 1;
 }
