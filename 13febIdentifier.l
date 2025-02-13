@@ -15,7 +15,7 @@
 %}
 
 %%
-^[_a-zA-Z][a-zA-Z0-9_]+     {flag = 1;}
+[_a-zA-Z][a-zA-Z0-9_]+     {flag = 1;}
 .        {flag = 0;}    
 \n  {
         if(flag)    printf("\nValid\n");
