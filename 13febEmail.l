@@ -9,7 +9,7 @@
 %}
 
 %%
-^[a-zA-Z0-9._-]+@gmail.com     {flag = 1;}
+[a-zA-Z0-9._-]+@gmail.com     {flag = 1;}
 .   {flag = 0;}
 \n  {
         if(flag){
