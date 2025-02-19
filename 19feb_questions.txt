@@ -1,0 +1,5 @@
+// remove comments from a lex program
+// check whether the entered date is valid or not dd-mm-yyyy
+// integer to float
+
+
