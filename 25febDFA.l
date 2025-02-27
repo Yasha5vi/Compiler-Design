@@ -1,0 +1,1 @@
+// write a lex program for DFA for even a and even b uing regular expression
