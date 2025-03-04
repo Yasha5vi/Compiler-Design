@@ -8,6 +8,7 @@ int total_whitespaces = 0; // To count whitespaces (spaces, tabs, newlines)
 %}
 
 %%
+// thoda sa error hai abhi rectify it
 [ \t\n] { total_whitespaces++; }
 [a-zA-Z_]+ { total_words++; } 
 . { total_chars++; }
