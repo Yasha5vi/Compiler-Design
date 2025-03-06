@@ -1759,7 +1759,6 @@ int main(){
     } 
     yyin = ptr;
     yylex(); 
-    yyout = itr;
     fprintf(itr,"%s",res);
     fclose(itr);
     fclose(ptr);
