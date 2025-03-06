@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 5
-#define YY_END_OF_BUFFER 6
+#define YY_NUM_RULES 3
+#define YY_END_OF_BUFFER 4
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -360,29 +360,27 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[28] =
+static const flex_int16_t yy_accept[9] =
     {   0,
-        0,    0,    6,    5,    3,    2,    2,    5,    2,    4,
-        4,    4,    4,    4,    2,    4,    4,    4,    1,    4,
-        4,    4,    4,    4,    4,    4,    0
+        0,    0,    4,    2,    3,    1,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
-        3,    4,    5,    6,    1,    1,    1,    7,    7,    7,
-        7,    7,    7,    7,    7,    7,    7,    1,    8,    9,
-       10,    1,    1,    1,   11,   11,   11,   11,   11,   11,
-       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
-       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
-        1,    1,    1,    1,   11,    1,   12,   11,   11,   11,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    3,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
 
-       13,   14,   11,   15,   16,   11,   11,   17,   11,   18,
-       19,   11,   11,   11,   20,   21,   11,   11,   22,   11,
-       11,   11,   23,    1,   24,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -399,47 +397,29 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[25] =
+static const YY_CHAR yy_meta[4] =
     {   0,
-        1,    1,    1,    1,    1,    1,    2,    1,    1,    1,
-        2,    2,    2,    2,    2,    2,    2,    2,    2,    2,
-        2,    2,    1,    1
+        1,    1,    2
     } ;
 
-static const flex_int16_t yy_base[29] =
+static const flex_int16_t yy_base[10] =
     {   0,
-        0,    0,   43,   44,   44,   44,   37,   31,   30,    0,
-       22,   21,   11,   22,   44,    0,   16,   16,    0,   13,
-       17,   19,   19,   13,    7,   14,   44,   24
+        0,    0,    5,    6,    6,    0,    0,    6,    2
     } ;
 
-static const flex_int16_t yy_def[29] =
+static const flex_int16_t yy_def[10] =
     {   0,
-       27,    1,   27,   27,   27,   27,   27,   27,   27,   28,
-       28,   28,   28,   28,   27,   28,   28,   28,   28,   28,
-       28,   28,   28,   28,   28,   28,    0,   27
+        8,    1,    8,    8,    8,    9,    9,    0,    8
     } ;
 
-static const flex_int16_t yy_nxt[69] =
+static const flex_int16_t yy_nxt[10] =
     {   0,
-        4,    5,    5,    6,    7,    5,    4,    5,    8,    9,
-       10,   10,   11,   12,   10,   13,   10,   10,   10,   10,
-       10,   14,    5,    5,   19,   16,   19,   19,   20,   26,
-       25,   19,   24,   19,   23,   22,   21,   18,   17,   15,
-       15,   15,   27,    3,   27,   27,   27,   27,   27,   27,
-       27,   27,   27,   27,   27,   27,   27,   27,   27,   27,
-       27,   27,   27,   27,   27,   27,   27,   27
+        4,    5,    6,    7,    8,    3,    8,    8,    8
     } ;
 
-static const flex_int16_t yy_chk[69] =
+static const flex_int16_t yy_chk[10] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,   13,   28,   26,   25,   13,   24,
-       23,   22,   21,   20,   18,   17,   14,   12,   11,    9,
-        8,    7,    3,   27,   27,   27,   27,   27,   27,   27,
-       27,   27,   27,   27,   27,   27,   27,   27,   27,   27,
-       27,   27,   27,   27,   27,   27,   27,   27
+        1,    1,    1,    9,    3,    8,    8,    8,    8
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -456,16 +436,18 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "27feb_tokenizing.l"
-#line 2 "27feb_tokenizing.l"
+#line 1 "6MarchReplaceWhitespace.l"
+/*
+    Design a lex code to replace all the white spaces of 
+    input.txt file by a single blank character and store the 
+    ouput in output.txt file
+*/
+#line 8 "6MarchReplaceWhitespace.l"
     #include<stdio.h>
     #include<string.h>
-    char key[100];
-    char op[100];
-    char sep[100];
-    char iden[100];
-#line 468 "lex.yy.c"
-#line 469 "lex.yy.c"
+    char res[100] = ""; 
+#line 450 "lex.yy.c"
+#line 451 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -682,9 +664,9 @@ YY_DECL
 		}
 
 	{
-#line 10 "27feb_tokenizing.l"
+#line 12 "6MarchReplaceWhitespace.l"
 
-#line 688 "lex.yy.c"
+#line 670 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -711,13 +693,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 28 )
+				if ( yy_current_state >= 9 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 44 );
+		while ( yy_base[yy_current_state] != 6 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -743,30 +725,20 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 11 "27feb_tokenizing.l"
-{strcat(key," ");strcat(key,yytext);}
+#line 13 "6MarchReplaceWhitespace.l"
+{strcat(res,"_");}  
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 12 "27feb_tokenizing.l"
-{strcat(op," ");strcat(op,yytext);}
+#line 14 "6MarchReplaceWhitespace.l"
+{strcat(res,yytext);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "27feb_tokenizing.l"
-{strcat(sep," ");strcat(sep,yytext);}
-	YY_BREAK
-case 4:
-YY_RULE_SETUP
-#line 14 "27feb_tokenizing.l"
-{strcat(iden," ");strcat(iden,yytext);}
-	YY_BREAK
-case 5:
-YY_RULE_SETUP
-#line 15 "27feb_tokenizing.l"
+#line 15 "6MarchReplaceWhitespace.l"
 ECHO;
 	YY_BREAK
-#line 770 "lex.yy.c"
+#line 742 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1063,7 +1035,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 28 )
+			if ( yy_current_state >= 9 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1091,11 +1063,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 28 )
+		if ( yy_current_state >= 9 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 27);
+	yy_is_jam = (yy_current_state == 8);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1771,28 +1743,26 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 15 "27feb_tokenizing.l"
+#line 15 "6MarchReplaceWhitespace.l"
 
 
 int yywrap(){
     return 1;
 }
+
 int main(){
-    FILE *ptr = fopen("in.txt","r");
-    if(!ptr){
-        printf("Error opening File\n");
+    FILE* ptr = fopen("in.txt","r");
+    FILE* itr = fopen("out.txt","w");
+    if(!ptr || !itr){
+        printf("Error Opening File\n");
         return 0;
-    }
+    } 
     yyin = ptr;
-    yylex();
-    printf("\nKEYWORDS : ");
-    puts(key);
-    printf("\nOPERATORS : ");
-    puts(op);
-    printf("\nSEPARTORS : ");
-    puts(sep);
-    printf("\nIDENTIFIERS : ");
-    puts(iden);
+    yylex(); 
+    yyout = itr;
+    fprintf(itr,"%s",res);
+    fclose(itr);
     fclose(ptr);
     return 0;
 }
+
