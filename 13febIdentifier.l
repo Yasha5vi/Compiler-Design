@@ -11,16 +11,12 @@
 
 %{
     #include<stdio.h>
-    int flag = 0;
 %}
 
 %%
-[_a-zA-Z][a-zA-Z0-9_]+     {flag = 1;}
-.        {flag = 0;}    
-\n  {
-        if(flag)    printf("\nValid\n");
-        else        printf("\nInvalid\n");
-    }
+"float"|"int"|"if"|"else"|"while"|"return" { printf("ok");}
+[_a-zA-Z]([a-zA-Z0-9_])*     {  printf("Valid Identifier\n");   }
+.*                           {  printf("Invalid Identifier\n"); }    
 %%
 
 int yywrap(){
