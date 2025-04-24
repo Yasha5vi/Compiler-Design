@@ -1,0 +1,3 @@
+write a DFA for integer and float and constants
+
+write a DFA that accepts string with third last element with 'a'
